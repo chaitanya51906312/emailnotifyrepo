@@ -2,9 +2,9 @@ name: notifyrepo
 on:
   workflow_dispatch
 jobs:
-  - name: Send mail
-    if: failure()
-    uses: dawidd6/action-send-mail@v2
+  name: Send mail
+  if: failure()
+  uses: dawidd6/action-send-mail@v2
     with:
     # mail server settings
     server_address: smtp.gmail.com
